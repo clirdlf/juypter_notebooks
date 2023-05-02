@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5c09ea5f2ad7bbb00da883f2004ab6ff {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5c09ea5f2ad7bbb00da883f2004ab6ff" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5c09ea5f2ad7bbb00da883f2004ab6ff = L.map(
+                "map_5c09ea5f2ad7bbb00da883f2004ab6ff",
+                {
+                    center: [37.0902, -95.7129],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1f14038dd5f728dc8696120255370e51 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5c09ea5f2ad7bbb00da883f2004ab6ff);
+        
+    
+            var feature_group_b9d1967c24d6efa097ef0f102907fa37 = L.featureGroup(
+                {}
+            ).addTo(map_5c09ea5f2ad7bbb00da883f2004ab6ff);
+        
+    
+            var marker_bd7fd3ee70d3d00b68fa2ae287dd20aa = L.marker(
+                [58.3001846, -134.415158],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_bd7fd3ee70d3d00b68fa2ae287dd20aa.bindTooltip(
+                `<div>
+                     Alaska State Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dee0b6475a52f268cc7d8d84874d03f8 = L.marker(
+                [38.93804505, -77.08939223651926],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_dee0b6475a52f268cc7d8d84874d03f8.bindTooltip(
+                `<div>
+                     American University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_165522c7bb4aa8cb68f914da0ad73423 = L.marker(
+                [42.3703768, -72.5160691823344],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_165522c7bb4aa8cb68f914da0ad73423.bindTooltip(
+                `<div>
+                     Amherst College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6ffdfb0cf821403770c974f89317d436 = L.marker(
+                [33.7516821, -84.4135688],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_6ffdfb0cf821403770c974f89317d436.bindTooltip(
+                `<div>
+                     Atlanta University Center, Robert W. Woodruff Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c948a7b017fa4c37aeb220887940630a = L.marker(
+                [44.1060827, -70.20232209196428],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_c948a7b017fa4c37aeb220887940630a.bindTooltip(
+                `<div>
+                     Bates College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1fb16ba2c16367e387e0e26ee2a68746 = L.marker(
+                [31.55043405, -97.1102905567766],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_1fb16ba2c16367e387e0e26ee2a68746.bindTooltip(
+                `<div>
+                     Baylor University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f5b6e0a5c37e0e89fe2219a22918d0f = L.marker(
+                [42.5009819, -89.0157777411969],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_9f5b6e0a5c37e0e89fe2219a22918d0f.bindTooltip(
+                `<div>
+                     Beloit College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79fe1a47c2c72fa4d8dd8bde4c19db08 = L.marker(
+                [37.5717496, -84.2902111],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_79fe1a47c2c72fa4d8dd8bde4c19db08.bindTooltip(
+                `<div>
+                     Berea College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f008b4fb8122ab1417cdb428a963c08 = L.marker(
+                [42.3354481, -71.16826648999114],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_4f008b4fb8122ab1417cdb428a963c08.bindTooltip(
+                `<div>
+                     Boston College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_378beb7c94c8f8748cbdb93eb0c76afc = L.marker(
+                [43.908173500000004, -69.96048055054536],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_378beb7c94c8f8748cbdb93eb0c76afc.bindTooltip(
+                `<div>
+                     Bowdoin College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80444f99a0fd7033f35efda3525492e6 = L.marker(
+                [41.82696285, -71.40015726838962],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_80444f99a0fd7033f35efda3525492e6.bindTooltip(
+                `<div>
+                     Brown University Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5acf0f99a04ec0d7ccb92ea83ae179d3 = L.marker(
+                [33.9715465, -117.3829591739563],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_5acf0f99a04ec0d7ccb92ea83ae179d3.bindTooltip(
+                `<div>
+                     California Digital Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_afd77412efc672d36f80fb984549b429 = L.marker(
+                [44.47183535, -93.14145805901515],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_afd77412efc672d36f80fb984549b429.bindTooltip(
+                `<div>
+                     Carleton College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63f905a0a2e5bc420535f7002b9dae45 = L.marker(
+                [40.444189699999995, -79.94271918393466],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_63f905a0a2e5bc420535f7002b9dae45.bindTooltip(
+                `<div>
+                     Carnegie Mellon University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51b15a7e60e450b37a4c1b43c57eb98d = L.marker(
+                [42.6228012, -87.82229092011687],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_51b15a7e60e450b37a4c1b43c57eb98d.bindTooltip(
+                `<div>
+                     Carthage College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ac73a33e4345a24aaa0166ac1a9ffb0 = L.marker(
+                [38.939102399999996, -76.99996417338346],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_2ac73a33e4345a24aaa0166ac1a9ffb0.bindTooltip(
+                `<div>
+                     The Catholic University of America
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98320ef97c3db1c5e99aa547ab7eba11 = L.marker(
+                [34.10516465, -117.708708952974],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_98320ef97c3db1c5e99aa547ab7eba11.bindTooltip(
+                `<div>
+                     The Claremont Colleges
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35237ee19bc9640b94896bacb9e77e81 = L.marker(
+                [42.7049629, -73.21688606858808],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_35237ee19bc9640b94896bacb9e77e81.bindTooltip(
+                `<div>
+                     The Clark Art Institute
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe4b86f77a863bddc7ee8fa1d01f7af9 = L.marker(
+                [42.815403700000005, -75.53958155911818],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_fe4b86f77a863bddc7ee8fa1d01f7af9.bindTooltip(
+                `<div>
+                     Colgate University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1725b21396c64ddc39655dbfd7a2e6ac = L.marker(
+                [32.7844246, -79.93811493945894],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_1725b21396c64ddc39655dbfd7a2e6ac.bindTooltip(
+                `<div>
+                     College of Charleston
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_085211dfaa2322e9fa2e5c73ea3d4dce = L.marker(
+                [42.23668645, -71.80702483708313],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_085211dfaa2322e9fa2e5c73ea3d4dce.bindTooltip(
+                `<div>
+                     College of the Holy Cross
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aeb01757a3fecd1203e0ff3babd7c44b = L.marker(
+                [40.80775585, -73.96164946987652],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_aeb01757a3fecd1203e0ff3babd7c44b.bindTooltip(
+                `<div>
+                     Columbia University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fae6a6ea3acc0c649d29b8fd8e6b659e = L.marker(
+                [41.379133350000004, -72.10653061495535],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_fae6a6ea3acc0c649d29b8fd8e6b659e.bindTooltip(
+                `<div>
+                     Connecticut College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a33fab6e5a72d0eea3378aaacff6b40a = L.marker(
+                [43.70526735, -72.29052293092106],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_a33fab6e5a72d0eea3378aaacff6b40a.bindTooltip(
+                `<div>
+                     Dartmouth College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ca5e62965b4f5fb932d6e4da94776cf = L.marker(
+                [36.00015569999999, -78.94422972195878],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_0ca5e62965b4f5fb932d6e4da94776cf.bindTooltip(
+                `<div>
+                     Duke University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f2adf276ef9029236035ad26e61021e = L.marker(
+                [33.80045465, -84.31723780466274],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_7f2adf276ef9029236035ad26e61021e.bindTooltip(
+                `<div>
+                     Emory University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1429503a0183c698a0c64fa2751432e5 = L.marker(
+                [26.119403650000002, -80.14169191096471],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_1429503a0183c698a0c64fa2751432e5.bindTooltip(
+                `<div>
+                     Florida Atlantic University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d4015009304983d1f4e94e97ae6ce67 = L.marker(
+                [34.92577435, -82.4385258125221],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_7d4015009304983d1f4e94e97ae6ce67.bindTooltip(
+                `<div>
+                     Furman University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34b5e4531987a6e5832b5d3e35d659a2 = L.marker(
+                [38.83133325, -77.30798838879116],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_34b5e4531987a6e5832b5d3e35d659a2.bindTooltip(
+                `<div>
+                     George Mason University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ee5bfdd7c61506eebee48f7df926598 = L.marker(
+                [38.89949715, -77.04821211705953],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_1ee5bfdd7c61506eebee48f7df926598.bindTooltip(
+                `<div>
+                     The George Washington University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2602bd2b3b5b1f21110b225ce12fc1e7 = L.marker(
+                [38.90893925, -77.07457962060826],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_2602bd2b3b5b1f21110b225ce12fc1e7.bindTooltip(
+                `<div>
+                     Georgetown University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e1d43774d61e4dff352240f639a9873 = L.marker(
+                [33.776033, -84.39884086001581],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_8e1d43774d61e4dff352240f639a9873.bindTooltip(
+                `<div>
+                     Georgia Institute of Technology
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_626d6bcf6084a97adf348f67c0cdc3e5 = L.marker(
+                [41.75111985, -92.71984863278584],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_626d6bcf6084a97adf348f67c0cdc3e5.bindTooltip(
+                `<div>
+                     Grinnell College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af5e6a0c7f87fb354f797734dc095872 = L.marker(
+                [43.0537974, -75.40689907682119],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_af5e6a0c7f87fb354f797734dc095872.bindTooltip(
+                `<div>
+                     Hamilton College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa8028e4e826a0dc0eeb1649485b4108 = L.marker(
+                [42.36790855, -71.12678237443698],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_aa8028e4e826a0dc0eeb1649485b4108.bindTooltip(
+                `<div>
+                     Harvard University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62715e66c46f159267e88072bbbe776b = L.marker(
+                [40.0071506, -75.30694232576307],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_62715e66c46f159267e88072bbbe776b.bindTooltip(
+                `<div>
+                     Haverford College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e959d266e19603aeb41548010bac192 = L.marker(
+                [41.704567749999995, -86.23822026017265],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_9e959d266e19603aeb41548010bac192.bindTooltip(
+                `<div>
+                     Indiana University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a47adf3f8f189dd004272f38d8fa57ae = L.marker(
+                [42.02790455, -93.64461297801853],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_a47adf3f8f189dd004272f38d8fa57ae.bindTooltip(
+                `<div>
+                     Iowa State University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f750f1673802b9504fb414a7ff09c4fa = L.marker(
+                [-6.49472935, 107.4222258682986],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_f750f1673802b9504fb414a7ff09c4fa.bindTooltip(
+                `<div>
+                     Jisc
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76b60b67534ea63ae8c0d0621df1596e = L.marker(
+                [40.37264735, -82.39428986783508],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_76b60b67534ea63ae8c0d0621df1596e.bindTooltip(
+                `<div>
+                     Kenyon College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f38219f6dfb54ce88ff4ca12dbe0ad67 = L.marker(
+                [40.6986835, -75.20924604652205],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_f38219f6dfb54ce88ff4ca12dbe0ad67.bindTooltip(
+                `<div>
+                     Lafayette College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ff372b2fd82da0f73438beeb78a9a83 = L.marker(
+                [38.8886691, -77.0046360167776],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_3ff372b2fd82da0f73438beeb78a9a83.bindTooltip(
+                `<div>
+                     Library of Congress
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78a9753c8631a2d659b7cbf0c4938c36 = L.marker(
+                [43.03888115, -87.93158327046632],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_78a9753c8631a2d659b7cbf0c4938c36.bindTooltip(
+                `<div>
+                     Marquette University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ef78fe8af3f65edc5f67e95698c5a28 = L.marker(
+                [42.3582529, -71.0966272383055],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_0ef78fe8af3f65edc5f67e95698c5a28.bindTooltip(
+                `<div>
+                     Massachusetts Institute of Technology
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d42679343f0744b7695b0e5aad62f93 = L.marker(
+                [43.263939699999995, -79.917825231868],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_9d42679343f0744b7695b0e5aad62f93.bindTooltip(
+                `<div>
+                     McMaster University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9015182eb19bf9066d1dddf6287b2b00 = L.marker(
+                [39.5094198, -84.7311545671451],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_9015182eb19bf9066d1dddf6287b2b00.bindTooltip(
+                `<div>
+                     Miami University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c655ad3073da11d62b42dbf030214179 = L.marker(
+                [35.84860085, -86.36090357044624],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_c655ad3073da11d62b42dbf030214179.bindTooltip(
+                `<div>
+                     Middle Tennessee State University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0505502584db91e0c1b238c1e5c4739 = L.marker(
+                [42.25532845, -72.56966884397315],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_b0505502584db91e0c1b238c1e5c4739.bindTooltip(
+                `<div>
+                     Mount Holyoke College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b8b1bf6c1e0c759a0147311521a4c28 = L.marker(
+                [38.99569835, -77.09888932611798],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_3b8b1bf6c1e0c759a0147311521a4c28.bindTooltip(
+                `<div>
+                     National Library of Medicine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_341c158906ad5f785e3edb269c430d47 = L.marker(
+                [40.7533445, -73.9821523605632],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_341c158906ad5f785e3edb269c430d47.bindTooltip(
+                `<div>
+                     New York Public Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b34028e1ed14998c2b0b6b2d9d192f9d = L.marker(
+                [40.72925325, -73.99625393609625],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_b34028e1ed14998c2b0b6b2d9d192f9d.bindTooltip(
+                `<div>
+                     New York University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d1317b34e88b90155e4a7edaa737e9f = L.marker(
+                [42.3390301, -71.08791294953176],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_9d1317b34e88b90155e4a7edaa737e9f.bindTooltip(
+                `<div>
+                     Northeastern University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_97e15c4cbcfbd45b2eb0bd4578cae95d = L.marker(
+                [34.12719495, -118.20992029989196],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_97e15c4cbcfbd45b2eb0bd4578cae95d.bindTooltip(
+                `<div>
+                     Occidental College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b894973b2948ffb684461d497db8e6a = L.marker(
+                [40.00570905, -83.02866465596318],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_5b894973b2948ffb684461d497db8e6a.bindTooltip(
+                `<div>
+                     The Ohio State University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_23d4f0f2e046c26dc2628cf100b1ac4a = L.marker(
+                [40.8025835, -77.85593833184565],
+                {}
+            ).addTo(feature_group_b9d1967c24d6efa097ef0f102907fa37);
+        
+    
+            marker_23d4f0f2e046c26dc2628cf100b1ac4a.bindTooltip(
+                `<div>
+                     Pennsylvania State University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_4254eb066e83952d07d8b27aa3b969f3 = L.featureGroup(
+                {}
+            ).addTo(map_5c09ea5f2ad7bbb00da883f2004ab6ff);
+        
+    
+            var marker_c96592af849c753cc95edd56df11eed4 = L.marker(
+                [42.3703768, -72.5160691823344],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_c96592af849c753cc95edd56df11eed4.bindTooltip(
+                `<div>
+                     Amherst College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2dbaaf8330caaad73ff444c99f40052 = L.marker(
+                [33.7516821, -84.4135688],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_a2dbaaf8330caaad73ff444c99f40052.bindTooltip(
+                `<div>
+                     Atlanta University Center, Robert W. Woodruff Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01c494557dd7f5faaa9d53b6934c94a7 = L.marker(
+                [44.1060827, -70.20232209196428],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_01c494557dd7f5faaa9d53b6934c94a7.bindTooltip(
+                `<div>
+                     Bates College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ce4ed6c522e2db052fc63d55fb48d54 = L.marker(
+                [31.55043405, -97.1102905567766],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_4ce4ed6c522e2db052fc63d55fb48d54.bindTooltip(
+                `<div>
+                     Baylor University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a5d785fd892f526d5dbbd00535ee10b = L.marker(
+                [31.20861455, 29.908986012425963],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_2a5d785fd892f526d5dbbd00535ee10b.bindTooltip(
+                `<div>
+                     Bibliotheca Alexandrina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4d21ba59ebfc5ecee451135dca26333 = L.marker(
+                [42.3354481, -71.16826648999114],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_e4d21ba59ebfc5ecee451135dca26333.bindTooltip(
+                `<div>
+                     Boston College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7ef13f8d150d6e8dc461ee15464efd0 = L.marker(
+                [43.908173500000004, -69.96048055054536],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_c7ef13f8d150d6e8dc461ee15464efd0.bindTooltip(
+                `<div>
+                     Bowdoin College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eef6220c482a998c7be505a4f921b656 = L.marker(
+                [41.82696285, -71.40015726838962],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_eef6220c482a998c7be505a4f921b656.bindTooltip(
+                `<div>
+                     Brown University Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_002a6a664643ceb407893cca3ff78cc8 = L.marker(
+                [33.9715465, -117.3829591739563],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_002a6a664643ceb407893cca3ff78cc8.bindTooltip(
+                `<div>
+                     California Digital Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14ce6634edc0eb2018e576c41adbed9d = L.marker(
+                [40.444189699999995, -79.94271918393466],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_14ce6634edc0eb2018e576c41adbed9d.bindTooltip(
+                `<div>
+                     Carnegie Mellon University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5528e9f5329673784fb6529bf50efd7 = L.marker(
+                [34.10516465, -117.708708952974],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_d5528e9f5329673784fb6529bf50efd7.bindTooltip(
+                `<div>
+                     The Claremont Colleges
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c52ff46b3162ca30beb23ad4252d6fd = L.marker(
+                [34.66869155, -82.83743475607795],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_9c52ff46b3162ca30beb23ad4252d6fd.bindTooltip(
+                `<div>
+                     Clemson University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e394b2156369add5ba899346e803aec1 = L.marker(
+                [42.815403700000005, -75.53958155911818],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_e394b2156369add5ba899346e803aec1.bindTooltip(
+                `<div>
+                     Colgate University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_162e1b69256b10f39b9e3d55358068ad = L.marker(
+                [38.8480439, -104.8239509314005],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_162e1b69256b10f39b9e3d55358068ad.bindTooltip(
+                `<div>
+                     Colorado College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73d9340f2f0203bcc66bad46af6ad27f = L.marker(
+                [40.570656650000004, -105.08539947634978],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_73d9340f2f0203bcc66bad46af6ad27f.bindTooltip(
+                `<div>
+                     Colorado State University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4cc2698985ae137d4cd92c68bd77c406 = L.marker(
+                [40.80775585, -73.96164946987652],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_4cc2698985ae137d4cd92c68bd77c406.bindTooltip(
+                `<div>
+                     Columbia University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea767c5a01ecf046a4ff6a2b69c4cdaa = L.marker(
+                [45.49524405, -73.57849928292674],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_ea767c5a01ecf046a4ff6a2b69c4cdaa.bindTooltip(
+                `<div>
+                     Concordia University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22d0d16f5cc084987308f0bac58ff213 = L.marker(
+                [43.70526735, -72.29052293092106],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_22d0d16f5cc084987308f0bac58ff213.bindTooltip(
+                `<div>
+                     Dartmouth College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc014414cf05a855054bc7e874163e10 = L.marker(
+                [36.00015569999999, -78.94422972195878],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_cc014414cf05a855054bc7e874163e10.bindTooltip(
+                `<div>
+                     Duke University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1fc4d05ecea473eb9ca7069a20669383 = L.marker(
+                [33.80045465, -84.31723780466274],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_1fc4d05ecea473eb9ca7069a20669383.bindTooltip(
+                `<div>
+                     Emory University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9dc595d66c12b40de5a024ef96ffee6a = L.marker(
+                [30.44235995, -84.29747867166262],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_9dc595d66c12b40de5a024ef96ffee6a.bindTooltip(
+                `<div>
+                     Florida State University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae71fba934c581119295aaf8371a1074 = L.marker(
+                [38.89949715, -77.04821211705953],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_ae71fba934c581119295aaf8371a1074.bindTooltip(
+                `<div>
+                     The George Washington University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6fedb986f19cf098c4924c861e2e43a0 = L.marker(
+                [38.90893925, -77.07457962060826],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_6fedb986f19cf098c4924c861e2e43a0.bindTooltip(
+                `<div>
+                     Georgetown University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5194c2cf79be4305e3a1c068a41b05c = L.marker(
+                [33.776033, -84.39884086001581],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_c5194c2cf79be4305e3a1c068a41b05c.bindTooltip(
+                `<div>
+                     Georgia Institute of Technology
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fdbec85a072c36760368abe2eb71921b = L.marker(
+                [33.7535889, -84.38542086620515],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_fdbec85a072c36760368abe2eb71921b.bindTooltip(
+                `<div>
+                     Georgia State University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aff4c33353734fa10c83ba4c44ea2672 = L.marker(
+                [34.07695125, -118.47571198123117],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_aff4c33353734fa10c83ba4c44ea2672.bindTooltip(
+                `<div>
+                     Getty Research Institute
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c5efd88bc74a984f6da01e9dd83feed = L.marker(
+                [41.75111985, -92.71984863278584],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_3c5efd88bc74a984f6da01e9dd83feed.bindTooltip(
+                `<div>
+                     Grinnell College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d38045d53393b37e40a688128a3075a = L.marker(
+                [43.0537974, -75.40689907682119],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_7d38045d53393b37e40a688128a3075a.bindTooltip(
+                `<div>
+                     Hamilton College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6cdeef7b1f1a2387bd2f043b3cde2b69 = L.marker(
+                [42.36790855, -71.12678237443698],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_6cdeef7b1f1a2387bd2f043b3cde2b69.bindTooltip(
+                `<div>
+                     Harvard University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6d055cc8ef7807ae811ec1598fbad06 = L.marker(
+                [40.0071506, -75.30694232576307],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_d6d055cc8ef7807ae811ec1598fbad06.bindTooltip(
+                `<div>
+                     Haverford College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4730264c0c3c7494d0a684ac4241c7c = L.marker(
+                [41.704567749999995, -86.23822026017265],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_a4730264c0c3c7494d0a684ac4241c7c.bindTooltip(
+                `<div>
+                     Indiana University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4cbca2dcac3018e63abf1a3c6314b607 = L.marker(
+                [37.782271449999996, -122.471586527151],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_4cbca2dcac3018e63abf1a3c6314b607.bindTooltip(
+                `<div>
+                     Internet Archive
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11db2ad24f6224d7bd2b2faad29e5457 = L.marker(
+                [42.02790455, -93.64461297801853],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_11db2ad24f6224d7bd2b2faad29e5457.bindTooltip(
+                `<div>
+                     Iowa State University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_604353d4de282b7a268a9459cc587ada = L.marker(
+                [38.401896050000005, 20.670092887359495],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_604353d4de282b7a268a9459cc587ada.bindTooltip(
+                `<div>
+                     ITHAKA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9cea3e9ad2c7e8304bb5122bce80ceb7 = L.marker(
+                [38.4364404, -78.86896481344405],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_9cea3e9ad2c7e8304bb5122bce80ceb7.bindTooltip(
+                `<div>
+                     James Madison University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e03ca9339e36df7d89adba2ffdc0d473 = L.marker(
+                [-6.49472935, 107.4222258682986],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_e03ca9339e36df7d89adba2ffdc0d473.bindTooltip(
+                `<div>
+                     Jisc
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a867982d008144c48a622ae9d0fab6e = L.marker(
+                [40.37264735, -82.39428986783508],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_9a867982d008144c48a622ae9d0fab6e.bindTooltip(
+                `<div>
+                     Kenyon College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07e27550beba044c7a9bd384f89a62a4 = L.marker(
+                [40.6986835, -75.20924604652205],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_07e27550beba044c7a9bd384f89a62a4.bindTooltip(
+                `<div>
+                     Lafayette College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e8588762a6aa53414e800962bda6850 = L.marker(
+                [38.8886691, -77.0046360167776],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_1e8588762a6aa53414e800962bda6850.bindTooltip(
+                `<div>
+                     Library of Congress
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7e10b13401c4667f8054d9ad188c3d4 = L.marker(
+                [35.81860675, -106.26552639576428],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_d7e10b13401c4667f8054d9ad188c3d4.bindTooltip(
+                `<div>
+                     Los Alamos National Laboratory
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6478a873a350ff237d3aa86a155936a0 = L.marker(
+                [43.03888115, -87.93158327046632],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_6478a873a350ff237d3aa86a155936a0.bindTooltip(
+                `<div>
+                     Marquette University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96dabaf019e0b5733e6eeedac7b8b383 = L.marker(
+                [42.3582529, -71.0966272383055],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_96dabaf019e0b5733e6eeedac7b8b383.bindTooltip(
+                `<div>
+                     Massachusetts Institute of Technology
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e49649f51ea830f4274604891c142723 = L.marker(
+                [43.263939699999995, -79.917825231868],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_e49649f51ea830f4274604891c142723.bindTooltip(
+                `<div>
+                     McMaster University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ad500d11222d00747dc496dc399faf3 = L.marker(
+                [42.7024238, -84.48032837503001],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_1ad500d11222d00747dc496dc399faf3.bindTooltip(
+                `<div>
+                     Michigan State University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_50f7ed50f4edf98c1d3d16d0c588b382 = L.marker(
+                [35.84860085, -86.36090357044624],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_50f7ed50f4edf98c1d3d16d0c588b382.bindTooltip(
+                `<div>
+                     Middle Tennessee State University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81a30ba000eb6ddfa5cb7970f9123fec = L.marker(
+                [42.25532845, -72.56966884397315],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_81a30ba000eb6ddfa5cb7970f9123fec.bindTooltip(
+                `<div>
+                     Mount Holyoke College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4601a25717dee9937db6a264d081a628 = L.marker(
+                [38.89131155, -77.01990447478894],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_4601a25717dee9937db6a264d081a628.bindTooltip(
+                `<div>
+                     National Gallery of Art
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_636d0d908acfdf0b98da276d0e2b4ab7 = L.marker(
+                [38.99569835, -77.09888932611798],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_636d0d908acfdf0b98da276d0e2b4ab7.bindTooltip(
+                `<div>
+                     National Library of Medicine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_06f6842c4c4dd077564281e0601cced9 = L.marker(
+                [40.7533445, -73.9821523605632],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_06f6842c4c4dd077564281e0601cced9.bindTooltip(
+                `<div>
+                     New York Public Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bfa760f17076d5672f96db5ba23d4f7a = L.marker(
+                [40.72925325, -73.99625393609625],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_bfa760f17076d5672f96db5ba23d4f7a.bindTooltip(
+                `<div>
+                     New York University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93f9cd7d53d0c7809679ae78d986e740 = L.marker(
+                [42.3390301, -71.08791294953176],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_93f9cd7d53d0c7809679ae78d986e740.bindTooltip(
+                `<div>
+                     Northeastern University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47dce6afa11ec232c82e3e5d3350f372 = L.marker(
+                [34.12719495, -118.20992029989196],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_47dce6afa11ec232c82e3e5d3350f372.bindTooltip(
+                `<div>
+                     Occidental College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce104239f622a811c76d3ab13bc1010b = L.marker(
+                [40.00570905, -83.02866465596318],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_ce104239f622a811c76d3ab13bc1010b.bindTooltip(
+                `<div>
+                     The Ohio State University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4941ef5da718b6b4c184cabc4f2c1dae = L.marker(
+                [40.8025835, -77.85593833184565],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_4941ef5da718b6b4c184cabc4f2c1dae.bindTooltip(
+                `<div>
+                     Pennsylvania State University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c25780a415d1d5d7814eda0ac48e3974 = L.marker(
+                [39.965563849999995, -75.18151277315162],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_c25780a415d1d5d7814eda0ac48e3974.bindTooltip(
+                `<div>
+                     Philadelphia Museum of Art
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_564048aeca22b42367cd681846177a09 = L.marker(
+                [40.69133825, -73.96301632978006],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_564048aeca22b42367cd681846177a09.bindTooltip(
+                `<div>
+                     Pratt Institute
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b49036984a9520e0a9c33696b9ffd77 = L.marker(
+                [40.34453705, -74.6641629283314],
+                {}
+            ).addTo(feature_group_4254eb066e83952d07d8b27aa3b969f3);
+        
+    
+            marker_1b49036984a9520e0a9c33696b9ffd77.bindTooltip(
+                `<div>
+                     Princeton Theological Seminary
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_13fcd7b2becc1794afca592c2e52d5a7 = {
+                base_layers : {
+                    "stamentoner" : tile_layer_1f14038dd5f728dc8696120255370e51,
+                },
+                overlays :  {
+                    "CLIR Sponsors" : feature_group_b9d1967c24d6efa097ef0f102907fa37,
+                    "DLF Members" : feature_group_4254eb066e83952d07d8b27aa3b969f3,
+                },
+            };
+            L.control.layers(
+                layer_control_13fcd7b2becc1794afca592c2e52d5a7.base_layers,
+                layer_control_13fcd7b2becc1794afca592c2e52d5a7.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_5c09ea5f2ad7bbb00da883f2004ab6ff);
+        
+</script>
+</html>
